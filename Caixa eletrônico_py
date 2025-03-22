@@ -1,0 +1,65 @@
+programa
+saldo = 1000.00
+while True:
+    print("===Caixa Eletrônico===\n")
+    print("1 - Consultar Saldo\n")
+    print("2 - Sacar\n")
+    print("3 - Sair\n")
+    opcao = int(input("Escolha Uma Opção: "))
+
+    if opcao == 1:
+        print("\nSeu saldo atual é: R$", saldo, "\n")
+    elif opcao == 3:
+        print("\nObrigado Por Utilizar Nossos Serviços\n")
+        break
+    elif opcao > 3 or opcao <= 0:
+        print("\nOpção Inválida - Por Favor Digite Novamente\n")
+    elif opcao == 2:
+        saque = float(input("\nDigite o valor desejado: R$ "))
+        if saque > saldo:
+            print("\nSaldo Insuficiente\n")
+        elif saque <= 0:
+            print("\nValor Inválido - Digite um Valor Maior que 0\n")
+        else:
+            saldo = saldo - saque
+            print("\nSaque Realizado Com Sucesso\n")
+            print("\nNovo Saldo: R$", saldo, "\n")
+		inteiro opcao
+		real saque
+
+		enquanto(verdadeiro) {
+			escreva("===Caixa Eletrônico===\n")
+			escreva("1 - Consultar Saldo\n")
+			escreva("2 - Sacar\n")
+			escreva("3 - Sair\n")
+			escreva("Escolha Uma Opção: ")
+			leia(opcao)
+
+      se(opcao == 1) {
+				escreva("\nSeu saldo atual é: R$",saldo,"\n") }
+      se(opcao == 3) {
+				escreva("\nObrigado Por Utilizar Nossos Serviços\n") }
+      se(opcao > 3) {
+        escreva ("\nOpção Inválida - Por Favor Digite Novamente\n") }
+      se(opcao <= 0) {
+        escreva ("\nOpção Inválida - Por Favor Digite Novamente\n") }
+			senao se(opcao == 2) {
+				escreva("\nDigite o valor desejado: R$ ")
+				leia(saque)
+			se(saque > saldo) {
+				escreva("\nSaldo Insuficiente\n") }
+			senao se(saque <=0) {
+				escreva("\nValor Inválido - Digite um Valor Maior que 0\n") }
+			senao{
+				saldo = saldo - saque
+				escreva("\nSaque Realizado Com Sucesso\n")
+				escreva("\nNovo Saldo: R$", saldo, "\n")
+			}
+
+}
+
+}
+
+}
+
+}
